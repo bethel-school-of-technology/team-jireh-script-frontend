@@ -10,13 +10,10 @@ export class AppComponent implements OnInit {
   title = 'Econex';
   products: any[];
   
+
   constructor(private http: HttpClient) {}
   
   ngOnInit(): void {
-   /* this.http.get('https://localhost:5001/api/products').subscribe(response: any)) => {
-      console.log(response);
-  }, error => {
-    console.log(error);
-    });*/
+    
   }
 }

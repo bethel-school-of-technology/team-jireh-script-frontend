@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
+import {OwlModule} from 'ngx-owl-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -47,6 +48,7 @@ import { PaymentComponent } from './components/payment/payment.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    OwlModule
   
   
   ],
