@@ -19,6 +19,7 @@ import { EditComponent } from './components/edit/edit.component';
 import { CreateComponent } from './components/create/create.component';
 import { ViewoneitemComponent } from './components/viewoneitem/viewoneitem.component';
 import { PaymentComponent } from './components/payment/payment.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -37,7 +38,8 @@ import { PaymentComponent } from './components/payment/payment.component';
     EditComponent,
     CreateComponent,
     ViewoneitemComponent,
-    PaymentComponent
+    PaymentComponent,
+    FooterComponent
   
 
    
