@@ -87,4 +87,49 @@ img {
  /*new code/......................... */
  /*/............................*/
 
+ /*section {
+     background-color: #eee;
+     margin-top: 300px;
+ }
+*/
+
+.blog .carousel-indicators {
+	left: 0;
+	top: auto;
+    bottom: -40px;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.blog .carousel-indicators .active {
+background: #707070;
+}
+
+ .featureditems {
+
+        max-width: 100%;
+        /*height: auto;*/
+        vertical-align: middle;
+        height: 232px;
+        width: 340px;
+        object-fit: cover;
+        margin-top: 123px;
+     
+
+    
+}
+
+.featProductsTitle{
+    display:flex;
+    justify-content: center;
+    margin-top: 220px;
+    font-family: Lato;
  
+}
