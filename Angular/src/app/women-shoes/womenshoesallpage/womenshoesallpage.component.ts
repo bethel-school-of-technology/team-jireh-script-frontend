@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Item } from 'src/app/models/item';
+import { ItemService } from 'src/app/services/item.service';
 
 @Component({
   selector: 'app-womenshoesallpage',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WomenshoesallpageComponent implements OnInit {
 
-  constructor() { }
+  listofItems: Item[] = [];
+
+  constructor(private myItemService:ItemService) { }
 
   ngOnInit(): void {
+    this.myItemService.getAllItems().subscribe(response =>{console.log(response);
+    this.listofItems = response;})
   }
 
 }

@@ -32,3 +32,59 @@
 img {
     object-fit: cover;
 }
+
+/*new code*/
+/*body {
+    background: #eee
+}*/
+
+.testimonial-1 {
+    background: #fff;
+    padding: 14px;
+    color: #000;
+    margin-top: 72px;
+}
+
+.col-md-4 {
+    margin-top: 25px
+}
+
+.name {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: -3px
+}
+
+.place {
+    font-size: 13px;
+    color: #988c8c
+}
+
+.place-2 {
+    font-size: 13px;
+    color: #ffffff
+}
+
+.testimonial-2 {
+    background: blue;
+   padding: 14px;
+    color: #fff;
+    margin-top: 72px;
+}
+
+.customerreview{
+   margin-top: 210px;
+    text-align: center;
+    font-family: Lato;
+}
+
+ .middletestimoninal {
+     color:#f5f5f5;
+ }
+ 
+ 
+ 
+ /*new code/......................... */
+ /*/............................*/
+
+ 

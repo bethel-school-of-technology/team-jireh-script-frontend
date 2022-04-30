@@ -30,6 +30,7 @@ import { Womenshoes13Component } from './women-shoes/womenshoes13/womenshoes13.c
 import { Womenshoes14Component } from './women-shoes/womenshoes14/womenshoes14.component';
 import { Womenshoes15Component } from './women-shoes/womenshoes15/womenshoes15.component';
 import { Womenshoes16Component } from './women-shoes/womenshoes16/womenshoes16.component';
+import { ListoneComponent } from './listone/listone.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -40,8 +41,9 @@ const routes: Routes = [
   { path: 'shop', component: ShopComponent},
   { path: 'cart', component: CartComponent},
   { path: 'createitem', component: CreateComponent},
-  { path: 'edititem', component: EditComponent},
-  { path: 'inventory', component: InventoryComponent},
+  { path: 'edititem/:itemId', component: EditComponent},
+  {path: 'inventory', component: InventoryComponent},
+  { path: 'inventory/:itemId', component: ListoneComponent},
   { path: 'viewoneitem', component:ViewoneitemComponent},
   { path: 'payment', component: PaymentComponent},
   {path: 'allwomenshoes', component: WomenshoesallpageComponent},

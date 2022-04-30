@@ -20,6 +20,7 @@ import { CreateComponent } from './components/create/create.component';
 import { ViewoneitemComponent } from './components/viewoneitem/viewoneitem.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { FooterComponent } from './footer/footer.component';
+import { ListoneComponent } from './listone/listone.component';
 
 
 
@@ -41,7 +42,8 @@ import { FooterComponent } from './footer/footer.component';
     CreateComponent,
     ViewoneitemComponent,
     PaymentComponent,
-    FooterComponent
+    FooterComponent,
+    ListoneComponent
    
   
 
