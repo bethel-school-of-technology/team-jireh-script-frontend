@@ -1,3 +1,4 @@
+import { ConditionalExpr } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerregisterComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
 
 }

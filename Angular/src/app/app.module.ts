@@ -21,7 +21,8 @@ import { ViewoneitemComponent } from './components/viewoneitem/viewoneitem.compo
 import { PaymentComponent } from './components/payment/payment.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListoneComponent } from './listone/listone.component';
-
+import { FormsModule } from '@angular/forms';
+import { AuthModule } from './auth/auth.module';
 
 
 
@@ -55,7 +56,9 @@ import { ListoneComponent } from './listone/listone.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    OwlModule
+    OwlModule,
+    FormsModule,
+    AuthModule
   
   
   ],
