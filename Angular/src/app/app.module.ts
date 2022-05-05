@@ -20,6 +20,11 @@ import { CreateComponent } from './components/create/create.component';
 import { ViewoneitemComponent } from './components/viewoneitem/viewoneitem.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { FooterComponent } from './footer/footer.component';
+import { AllmensshoesComponent } from './allmensshoes/allmensshoes.component';
+import { Mensshoes1Component } from './allmensshoes/mensshoes1/mensshoes1.component';
+import { Mensshoes2Component } from './allmensshoes/mensshoes2/mensshoes2.component';
+import { Mensshoes3Component } from './allmensshoes/mensshoes3/mensshoes3.component';
+import { AllmenshatsComponent } from './allmenshats/allmenshats.component';
 
 
 
@@ -41,7 +46,12 @@ import { FooterComponent } from './footer/footer.component';
     CreateComponent,
     ViewoneitemComponent,
     PaymentComponent,
-    FooterComponent
+    FooterComponent,
+    AllmensshoesComponent,
+    Mensshoes1Component,
+    Mensshoes2Component,
+    Mensshoes3Component,
+    AllmenshatsComponent
    
   
 
