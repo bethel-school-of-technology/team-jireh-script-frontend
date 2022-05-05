@@ -30,6 +30,17 @@ import { Womenshoes13Component } from './women-shoes/womenshoes13/womenshoes13.c
 import { Womenshoes14Component } from './women-shoes/womenshoes14/womenshoes14.component';
 import { Womenshoes15Component } from './women-shoes/womenshoes15/womenshoes15.component';
 import { Womenshoes16Component } from './women-shoes/womenshoes16/womenshoes16.component';
+import { AllmensshoesComponent } from './allmensshoes/allmensshoes.component';
+import { Mensshoes1Component } from './allmensshoes/mensshoes1/mensshoes1.component';
+import { Mensshoes2Component } from './allmensshoes/mensshoes2/mensshoes2.component';
+import { Mensshoes3Component } from './allmensshoes/mensshoes3/mensshoes3.component';
+import { Mensshoes4Component } from './allmensshoes/mensshoes4/mensshoes4.component';
+import { Mensshoes5Component } from './allmensshoes/mensshoes5/mensshoes5.component';
+import { Mensshoes6Component } from './allmensshoes/mensshoes6/mensshoes6.component';
+import { Mensshoes7Component } from './allmensshoes/mensshoes7/mensshoes7.component';
+import { Mensshoes8Component } from './allmensshoes/mensshoes8/mensshoes8.component';
+import { Mensshoes9Component } from './allmensshoes/mensshoes9/mensshoes9.component';
+import { Mensshoes10Component } from './allmensshoes/mensshoes10/mensshoes10.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -61,6 +72,17 @@ const routes: Routes = [
   {path:'womenshoes14', component:Womenshoes14Component},
   {path:'womenshoes15', component:Womenshoes15Component},
   {path:'womenshoes16', component:Womenshoes16Component},
+  {path:'allmensshoes', component:AllmensshoesComponent},
+  {path:'mensshoes1', component:Mensshoes1Component},
+  {path:'mensshoes2', component:Mensshoes2Component},
+  {path:'mensshoes3', component:Mensshoes3Component},
+  {path:'mensshoes4', component:Mensshoes4Component},
+  {path:'mensshoes5',  component: Mensshoes5Component},
+  {path:'mensshoes6', component:Mensshoes6Component},
+  {path: 'mensshoes7', component: Mensshoes7Component},
+  {path:'mensshoes8', component: Mensshoes8Component},
+  {path:'mensshoes9', component:Mensshoes9Component},
+  {path:'mensshoes10', component:Mensshoes10Component},
   { path: '', redirectTo: '', pathMatch:'full'}
 ]; 
 
