@@ -25,6 +25,14 @@ import { Mensshoes1Component } from './allmensshoes/mensshoes1/mensshoes1.compon
 import { Mensshoes2Component } from './allmensshoes/mensshoes2/mensshoes2.component';
 import { Mensshoes3Component } from './allmensshoes/mensshoes3/mensshoes3.component';
 import { AllmenshatsComponent } from './allmenshats/allmenshats.component';
+import { Menshats1Component } from './allmenshats/menshats1/menshats1.component';
+import { Menshats2Component } from './allmenshats/menshats2/menshats2.component';
+import { Menshats3Component } from './allmenshats/menshats3/menshats3.component';
+import { Menshats4Component } from './allmenshats/menshats4/menshats4.component';
+import { Menshats5Component } from './allmenshats/menshats5/menshats5.component';
+import { Menshats6Component } from './allmenshats/menshats6/menshats6.component';
+import { Menshats7Component } from './allmenshats/menshats7/menshats7.component';
+import { Menshats8Component } from './allmenshats/menshats8/menshats8.component';
 
 
 
@@ -51,7 +59,15 @@ import { AllmenshatsComponent } from './allmenshats/allmenshats.component';
     Mensshoes1Component,
     Mensshoes2Component,
     Mensshoes3Component,
-    AllmenshatsComponent
+    AllmenshatsComponent,
+    Menshats1Component,
+    Menshats2Component,
+    Menshats3Component,
+    Menshats4Component,
+    Menshats5Component,
+    Menshats6Component,
+    Menshats7Component,
+    Menshats8Component
    
   
 
