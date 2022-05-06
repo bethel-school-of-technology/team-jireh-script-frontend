@@ -10,43 +10,79 @@
                 Login to Business Account
               </h2>
 
-              <form>
-                <div class="form-outline mb-4">
+              <form
+                [formGroup]="businessLoginForm"
+                (ngSubmit)="businessLogin()"
+              >
+                <div class="form-group">
                   <input
+                    formControlName="Username"
                     type="text"
-                    id="form3Example1cg"
-                    class="form-control form-control-lg"
+                    class="form-control"
+                    id="exampleInputUsername1"
+                    aria-describedby="username"
+                    placeholder="username"
                   />
-                  <label class="form-label" for="form3Example1cg"
-                    >Username</label
-                  >
                 </div>
-
-                <div class="form-outline mb-4">
+                <span
+                  class="text-danger"
+                  *ngIf="
+                    businessLoginForm.controls['Username'].dirty &&
+                    businessLoginForm.hasError('required', 'Username')
+                  "
+                  >*Username is required</span
+                >
+                <div class="form-group">
                   <input
-                    type="password"
-                    id="form3Example2cg"
-                    class="form-control form-control-lg"
+                    formControlName="BusinessName"
+                    type="text"
+                    class="form-control"
+                    id="exampleInputBusinessName1"
+                    aria-describedby="businessname"
+                    placeholder="business name"
                   />
-                  <label class="form-label" for="form3Example2cg"
-                    >Password</label
-                  >
                 </div>
+                <span
+                  class="text-danger"
+                  *ngIf="
+                    businessLoginForm.controls['BusinessName'].dirty &&
+                    businessLoginForm.hasError('required', 'BusinessName')
+                  "
+                  >*Business Name is required</span
+                >
+                <div class="form-group">
+                  <input
+                    formControlName="Password"
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    aria-describedby="password"
+                    placeholder="password"
+                  />
+                </div>
+                <span
+                  class="text-danger"
+                  *ngIf="
+                    businessLoginForm.controls['Password'].dirty &&
+                    businessLoginForm.hasError('required', 'Password')
+                  "
+                  >*Password is required</span
+                >
                 <div class="d-flex justify-content-center">
-                  <a
-                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
-                    href="/shop"
-                    >Continue</a
+                  <button
+                    type="submit"
+                    [disabled]="!businessLoginForm.valid"
+                    class="btn btn-dark mb-2"
                   >
+                    Login
+                  </button>
                 </div>
-
-                <p class="text-center text-muted mt-5 mb-0">
-                  You don't have a business account?
-                  <a href="/registerbusiness" class="fw-bold text-body"
-                    ><u>Sign-up</u></a
-                  >
-                </p>
               </form>
+              <a
+                style="color: white; passing-top: 30px"
+                routerLink="/businessregister"
+                >You don't have a business account? Sign-up</a
+              >
             </div>
           </div>
         </div>

@@ -1,20 +1,35 @@
-.gradient-custom-3 {
-    /* fallback for old browsers */
- 
-  
-    /* Chrome 10-25, Safari 5.1-6 */
-  
-  
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- 
-  }
-  .gradient-custom-4 {
-    /* fallback for old browsers */
-    background: #84fab0;
-  
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
-  
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
-  }
+.card-body {
+  background: linear-gradient(
+      #606c88,
+
+
+      #3f4c6b
+     );
+}
+input {
+  margin-top: 20px;
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}
+
+.card-body {
+  background: linear-gradient(
+      #606c88,
+
+
+      #3f4c6b
+     );
+}
+
+h2 {
+    color: whitesmoke;
+}
+.card {
+  margin-top: 40px;
+}

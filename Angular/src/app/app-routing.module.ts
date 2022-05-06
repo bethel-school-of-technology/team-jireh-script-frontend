@@ -61,9 +61,9 @@ import { Womenjean8Component } from './womenjeans/womenjean8/womenjean8.componen
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
-  { path: 'customerlogin', component: CustomerloginComponent},
-  { path: 'customerregister', component: CustomerregisterComponent},
-  { path: 'registerbusiness', component: BusinessregisterComponent},
+  { path: 'login', component: CustomerloginComponent},
+  { path: 'register', component: CustomerregisterComponent},
+  { path: 'businessregister', component: BusinessregisterComponent},
   { path: 'businesslogin', component: BusinessloginComponent},
   { path: 'shop', component: ShopComponent},
   { path: 'cart', component: CartComponent},
