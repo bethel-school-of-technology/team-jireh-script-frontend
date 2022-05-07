@@ -41,7 +41,15 @@ import { Mensshoes7Component } from './allmensshoes/mensshoes7/mensshoes7.compon
 import { Mensshoes8Component } from './allmensshoes/mensshoes8/mensshoes8.component';
 import { Mensshoes9Component } from './allmensshoes/mensshoes9/mensshoes9.component';
 import { Mensshoes10Component } from './allmensshoes/mensshoes10/mensshoes10.component';
-
+import { AllmenshatsComponent } from './allmenshats/allmenshats.component';
+import { Menshats1Component } from './allmenshats/menshats1/menshats1.component';
+import { Menshats2Component } from './allmenshats/menshats2/menshats2.component';
+import { Menshats3Component } from './allmenshats/menshats3/menshats3.component';
+import { Menshats4Component } from './allmenshats/menshats4/menshats4.component';
+import { Menshats5Component } from './allmenshats/menshats5/menshats5.component';
+import { Menshats6Component } from './allmenshats/menshats6/menshats6.component';
+import { Menshats7Component } from './allmenshats/menshats7/menshats7.component';
+import { Menshats8Component } from './allmenshats/menshats8/menshats8.component';
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'login', component: CustomerloginComponent},
@@ -83,6 +91,15 @@ const routes: Routes = [
   {path:'mensshoes8', component: Mensshoes8Component},
   {path:'mensshoes9', component:Mensshoes9Component},
   {path:'mensshoes10', component:Mensshoes10Component},
+  {path: 'allmenshats', component: AllmenshatsComponent},
+  {path: 'menshats1', component: Menshats1Component},
+  {path:'menshats2', component:Menshats2Component},
+  {path: 'menshats3', component: Menshats3Component},
+  {path: 'menshats4', component: Menshats4Component},
+  {path: 'menshats5', component:Menshats5Component},
+{path: 'menshats6', component: Menshats6Component},
+{path: 'menshats7', component: Menshats7Component},
+{path: 'menshats8', component: Menshats8Component},
   { path: '', redirectTo: '', pathMatch:'full'}
 ]; 
 
