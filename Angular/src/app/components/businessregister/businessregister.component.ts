@@ -24,7 +24,7 @@ export class BusinessregisterComponent implements OnInit {
     
   }
   businessSignUp(){
-    this.http.post<any>("http://localhost:4000",this.businessSignUpForm.value).subscribe(res=>{
+    this.http.post<any>(" http://localhost:3000/businesssignup",this.businessSignUpForm.value).subscribe(res=>{
       alert("Signup Successful");
       this.businessSignUpForm.reset();
       this.router.navigate(['businesslogin']);

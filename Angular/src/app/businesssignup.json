@@ -43,6 +43,14 @@
       "Email": "shoesexpress@gmail.com",
       "Password": "1234",
       "id": 5
+    },
+    {
+      "BusinessName": "FashionSeller",
+      "FirstName": "Jenna",
+      "LastName": "Williams",
+      "Email": "fashionseller@gmail.com",
+      "Password": "1234",
+      "id": 6
     }
   ]
 }

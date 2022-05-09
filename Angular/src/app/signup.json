@@ -111,6 +111,14 @@
       "Email": "shoppingspress@gmail.com",
       "Password": "12345",
       "id": 14
+    },
+    {
+      "Username": "MattW",
+      "FirstName": "Matt",
+      "LastName": "Williams",
+      "Email": "mattwilliams@gmail.com",
+      "Password": "1234",
+      "id": 15
     }
   ]
 }
