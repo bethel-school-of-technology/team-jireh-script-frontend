@@ -15,21 +15,20 @@ export class BusinessloginComponent implements OnInit {
 
   ngOnInit(): void {
     this.businessLoginForm = this.formBuilder.group({
-      Username:['',Validators.required],
       BusinessName:['',Validators.required],
       Password:['',Validators.required]
     })
   }
   businessLogin(){
-    this.http.get<any>("http://localhost:3000/businesssignup")
+    this.http.get<any>("http://localhost:4000")
     .subscribe(res=>{
       const businessUser = res.find((a:any)=>{
-        return a.Username === this.businessLoginForm.value.Username && a.BusinessName === this.businessLoginForm.value.BusinessName && a.Password === this.businessLoginForm.value.Password 
+        return a.BusinessName === this.businessLoginForm.value.BusinessName && a.Password === this.businessLoginForm.value.Password 
       });
       if(businessUser){
         alert("Login Success");
         this.businessLoginForm.reset();
-        this.router.navigate(['shop'])
+        this.router.navigate(['inventory'])
       }else{
         alert("user not found");
       }

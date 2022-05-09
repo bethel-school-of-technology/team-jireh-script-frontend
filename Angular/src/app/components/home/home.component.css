@@ -66,9 +66,8 @@ img {
 }
 
 .testimonial-2 {
-    background: linear-gradient(#606c88,
-
-
+    background: linear-gradient(  #606c88, 
+ 
     #3f4c6b);
    padding: 14px;
     color: #fff;
@@ -86,15 +85,7 @@ img {
  }
  
  
- 
- /*new code/......................... */
- /*/............................*/
 
- /*section {
-     background-color: #eee;
-     margin-top: 300px;
- }
-*/
 
 .blog .carousel-indicators {
 	left: 0;

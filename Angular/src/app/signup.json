@@ -103,6 +103,14 @@
       "Email": "johnmatthews@gmail.com",
       "Password": "12345",
       "id": 13
+    },
+    {
+      "Username": "ShoppingSpree",
+      "FirstName": "Jessi",
+      "LastName": "Matthews",
+      "Email": "shoppingspress@gmail.com",
+      "Password": "12345",
+      "id": 14
     }
   ]
 }

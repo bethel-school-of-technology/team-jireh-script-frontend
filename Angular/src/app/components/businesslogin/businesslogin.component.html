@@ -16,24 +16,6 @@
               >
                 <div class="form-group">
                   <input
-                    formControlName="Username"
-                    type="text"
-                    class="form-control"
-                    id="exampleInputUsername1"
-                    aria-describedby="username"
-                    placeholder="username"
-                  />
-                </div>
-                <span
-                  class="text-danger"
-                  *ngIf="
-                    businessLoginForm.controls['Username'].dirty &&
-                    businessLoginForm.hasError('required', 'Username')
-                  "
-                  >*Username is required</span
-                >
-                <div class="form-group">
-                  <input
                     formControlName="BusinessName"
                     type="text"
                     class="form-control"
