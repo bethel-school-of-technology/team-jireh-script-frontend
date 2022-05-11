@@ -33,6 +33,9 @@ import { Mensjackets4Component } from './allmensjackets/mensjackets4/mensjackets
 import { Mensjackets5Component } from './allmensjackets/mensjackets5/mensjackets5.component';
 import { Mensjackets6Component } from './allmensjackets/mensjackets6/mensjackets6.component';
 import { Mensjackets7Component } from './allmensjackets/mensjackets7/mensjackets7.component';
+import { AllmensshirtsComponent } from './allmensshirts/allmensshirts.component';
+import { Mensshirts1Component } from './allmensshirts/mensshirts1/mensshirts1.component';
+import { Mensshirts5Component } from './allmensshirts/mensshirts5/mensshirts5.component';
 
 
 
@@ -67,7 +70,10 @@ import { Mensjackets7Component } from './allmensjackets/mensjackets7/mensjackets
     Mensjackets4Component,
     Mensjackets5Component,
     Mensjackets6Component,
-    Mensjackets7Component
+    Mensjackets7Component,
+    AllmensshirtsComponent,
+    Mensshirts1Component,
+    Mensshirts5Component
    
   
 
