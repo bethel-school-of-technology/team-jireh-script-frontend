@@ -17,23 +17,7 @@
       "itemDescription": "You will love this snazzy pair of leather shoes. It is a US size 11.",
       "itemSeller": "Matt Smith",
       "imgUrl": "https://burst.shopifycdn.com/photos/mens-leather-dress-shoes.jpg?width=1850&format=pjpg&exif=1&iptc=1"
-    },
-    {
-      "itemName": "test",
-      "itemPrice": "20",
-      "itemDescription": "test",
-      "itemSeller": "test",
-      "id": 4
-    },
-    {
-      "itemName": "sneakers ",
-      "itemPrice": "29.99",
-      "itemDescription": "You will love these women's sneakers that light up!",
-      "itemSeller": "Sarah James",
-      "id": 5
-    },
-    {
-      "id": 6
     }
+    
   ]
 }
