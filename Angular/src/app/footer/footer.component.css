@@ -89,3 +89,16 @@
     margin-bottom:0;
   }
 
+.instagram {
+
+
+}
+
+.twitter {
+ margin: auto 50px;
+}
+.socialmedia {
+ display:flex;
+ justify-content: center;
+}
+
