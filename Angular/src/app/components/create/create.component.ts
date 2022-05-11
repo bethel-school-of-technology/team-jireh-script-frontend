@@ -11,11 +11,11 @@ import { ItemService } from 'src/app/services/item.service';
 })
 export class CreateComponent implements OnInit {
 
+  newItem: Item = new Item();
+  
   url: any; 
 	msg = "";
-	
 
-  newItem: Item = new Item();
 
   
 
@@ -27,6 +27,7 @@ export class CreateComponent implements OnInit {
   createNew(){
     this.myItemsService.createItem(this.newItem).subscribe(response => {
       console.log(response);
+      this.router.navigate(["inventory"]);
     })
   }
 

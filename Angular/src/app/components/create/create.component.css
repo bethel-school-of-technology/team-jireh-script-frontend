@@ -11,6 +11,11 @@ img, figure {
     
 }
 
+.createButton {
+    margin: 0 150px;
+    color: white;
+    background:  #D27D2D;
+}
 
 
 
@@ -21,7 +26,22 @@ img, figure {
 }
 
 
+.creatediv{
+    display: flex;
+    justify-content: center;
+    background-color: #E5E5E5;
+   
+}
 
+.econexItem {
+  /*margin: 15px 12px;*/
+  display: flex;
+  justify-content: flex-start;
+}
+  .itemTextBox {
+      display: flex;
+      justify-content: center;
+  }
 
 
 

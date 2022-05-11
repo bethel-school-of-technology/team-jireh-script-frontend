@@ -16,5 +16,11 @@ export class InventoryComponent implements OnInit {
     this.myItemService.getAllItems().subscribe(response =>{ console.log(response);
     this.listofItems = response;})
   }
-
+  deleteItem(itemId:number){
+    console.log("Testing" + itemId);
+    this.myItemService.deleteItem(itemId).subscribe(response =>{
+      console.log(response);
+      this.ngOnInit();
+    })
+  }
 }

@@ -11,6 +11,11 @@ img, figure {
     
 }
 
+.deleteButton {
+    color: white;
+    background:  #D27D2D;
+}
+
 .title {
     display:flex;
     justify-content: center;

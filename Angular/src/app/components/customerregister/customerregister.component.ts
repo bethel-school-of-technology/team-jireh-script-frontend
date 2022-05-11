@@ -25,7 +25,7 @@ export class CustomerregisterComponent implements OnInit {
     
   }
   signUp(){
-    this.http.post<any>("http://localhost:3000/signup",this.signupForm.value).subscribe(res=>{
+    this.http.post<any>("http://localhost:4000",this.signupForm.value).subscribe(res=>{
       alert("Signup Successful");
       this.signupForm.reset();
       this.router.navigate(['login']);

@@ -66,9 +66,10 @@ img {
 }
 
 .testimonial-2 {
-    background: linear-gradient(  #606c88, 
+   /* background: linear-gradient(#f5f7fa, 
  
-    #3f4c6b);
+    #485461);*/
+    background:#99ccff;
    padding: 14px;
     color: #fff;
     margin-top: 72px;

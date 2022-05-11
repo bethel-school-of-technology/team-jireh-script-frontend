@@ -7,49 +7,14 @@
     <a routerLink="/createitem">Add item</a>
   </p>
   <hr />
-  <!--
-  <form (ngSubmit)="createNew()">
-    <div class="card border-0">
-      <div style="text-align: center">
-        <div [innerHtml]="msg" *ngIf="msg" style="color: red"></div>
-        <div><img [src]="url" *ngIf="url" /></div>
-        <p>
-          <input type="file" (change)="selectFile($event)" />
-        </p>
-      </div>
-      <div class="card-body pb-2">
-        <div class="form-group">
-          <label for="itemName">Item Name</label>
-          <input type="text" name="itemname" [(ngModel)]="newItem.itemName" />
-        </div>
-        <div class="form-group">
-          <label for="itemPrice">Item Price</label>
-          <input type="text" name="itemPrice" [(ngModel)]="newItem.itemPrice" />
-        </div>
-        <div class="form-group">
-          <label for="itemDescription">Item Description</label>
-          <input
-            type="text"
-            name="itemDescription"
-            [(ngModel)]="newItem.itemDescription"
-          />
-        </div>
-        <label for="itemSeller">Item Seller</label>
-        <input type="text" name="itemSeller" [(ngModel)]="newItem.itemSeller" />
-      </div>
-      <br />
-    </div>
-    <button type="submit">Create</button>
-  </form>
-</div>
--->
+
   <section>
     <div class="mask d-flex align-items-center h-100 gradient-custom-3">
       <div class="container h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-12 col-md-9 col-lg-7 col-xl-6">
             <div class="card" style="border-radius: 15px">
-              <div class="card-body p-5 bigdiv">
+              <div class="card-body p-5 creatediv">
                 <form form (ngSubmit)="createNew()">
                   <div class="form-group">
                     <div style="text-align: center">
@@ -65,7 +30,9 @@
                     </div>
                     <br />
                     <div class="form-group">
+                      <label class="econexItem"><b>Item Name</b></label>
                       <input
+                        class="itemTextBox"
                         type="text"
                         name="itemname"
                         [(ngModel)]="newItem.itemName"
@@ -74,7 +41,9 @@
                     </div>
                     <br />
                     <div class="form-group">
+                      <label class="econexItem"><b>Item Price</b> </label>
                       <input
+                        class="itemTextBox"
                         type="text"
                         name="itemPrice"
                         [(ngModel)]="newItem.itemPrice"
@@ -84,26 +53,30 @@
                   </div>
                   <br />
                   <div class="form-group">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        name="itemDescription"
-                        [(ngModel)]="newItem.itemDescription"
-                        placeholder="item description"
-                      />
-                    </div>
-                    <br />
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        name="itemSeller"
-                        [(ngModel)]="newItem.itemSeller"
-                        placeholder="item seller"
-                      />
-                    </div>
-                    <br />
-                    <button type="submit">Create</button>
+                    <label class="econexItem"><b>Description</b></label>
+                    <input
+                      class="itemTextBox"
+                      type="text"
+                      name="itemDescription"
+                      [(ngModel)]="newItem.itemDescription"
+                      placeholder="item description"
+                    />
                   </div>
+                  <br />
+                  <div class="form-group">
+                    <label class="econexItem"><b>Seller</b></label>
+                    <input
+                      class="itemTextBox"
+                      type="text"
+                      name="itemSeller"
+                      [(ngModel)]="newItem.itemSeller"
+                      placeholder="item seller"
+                    />
+                  </div>
+                  <br />
+                  <button class="createButton" type="submit">
+                    <b>Create</b>
+                  </button>
                 </form>
               </div>
             </div>
