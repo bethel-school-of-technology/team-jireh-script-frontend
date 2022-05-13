@@ -74,6 +74,7 @@ import { Mensshirts5Component } from './allmensshirts/mensshirts5/mensshirts5.co
     AllmensshirtsComponent,
     Mensshirts1Component,
     Mensshirts5Component
+    
    
   
 
@@ -86,10 +87,12 @@ import { Mensshirts5Component } from './allmensshirts/mensshirts5/mensshirts5.co
     BrowserAnimationsModule,
     HttpClientModule,
     OwlModule
-  
+    
   
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
