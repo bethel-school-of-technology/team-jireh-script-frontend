@@ -20,9 +20,9 @@ export class CustomerloginComponent implements OnInit {
     })
   }
   login(){
-    this.http.get<any>("http://localhost:4000")
+    this.http.post<any>("http://localhost:4000/users/login",this.loginForm.value)
     .subscribe(res=>{
-      const user = res.find((a:any)=>{
+      const user = res.find((a:any)=> {
         return a.Username === this.loginForm.value.Username && a.Password === this.loginForm.value.Password
       });
       if(user){
@@ -30,10 +30,10 @@ export class CustomerloginComponent implements OnInit {
         this.loginForm.reset();
         this.router.navigate(['shop'])
       }else{
-        alert("user not found");
+        alert("User not found");
       }
     },err=>{
-      alert("Something went wrong!!")
+      alert("Something went wrong!")
     })
 
   }

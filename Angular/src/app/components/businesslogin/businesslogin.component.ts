@@ -20,7 +20,7 @@ export class BusinessloginComponent implements OnInit {
     })
   }
   businessLogin(){
-    this.http.get<any>("http://localhost:4000")
+    this.http.post<any>("http://localhost:4000/users/loginseller",this.businessLoginForm.value)
     .subscribe(res=>{
       const businessUser = res.find((a:any)=>{
         return a.BusinessName === this.businessLoginForm.value.BusinessName && a.Password === this.businessLoginForm.value.Password 

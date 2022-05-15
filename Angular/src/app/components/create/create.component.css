@@ -36,12 +36,12 @@ img, figure {
 .econexItem {
   /*margin: 15px 12px;*/
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
-  .itemTextBox {
-      display: flex;
-      justify-content: center;
+.itemTextBox {
+    margin-left: 90px;
   }
+
 
 
 

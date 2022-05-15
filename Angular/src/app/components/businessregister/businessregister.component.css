@@ -27,9 +27,14 @@ input {
      );
 }
 
+
 h2 {
     color: whitesmoke;
 }
 .card {
   margin-top: 40px;
+}
+.signIntext{
+ display: flex;
+ justify-content: center;
 }

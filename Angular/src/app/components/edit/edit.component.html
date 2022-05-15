@@ -17,39 +17,37 @@
               <div class="card-body p-5 editdiv">
                 <form form (ngSubmit)="updateItem()">
                   <div class="form-group">
-                    <div style="text-align: center">
-                      <div
-                        [innerHtml]="msg"
-                        *ngIf="msg"
-                        style="color: red"
-                      ></div>
-                      <div><img [src]="url" *ngIf="url" /></div>
-                      <p>
-                        <input type="file" (change)="selectFile($event)" />
-                      </p>
-                    </div>
-                    <br />
-                    <div class="form-group">
-                      <label class="econexItem"><b>Item Name</b></label>
-                      <input
-                        class="itemTextBox"
-                        type="text"
-                        name="itemname"
-                        [(ngModel)]="editItem.itemName"
-                        placeholder="item name"
-                      />
-                    </div>
-                    <br />
-                    <div class="form-group">
-                      <label class="econexItem"><b>Item Price</b></label>
-                      <input
-                        class="itemTextBox"
-                        type="text"
-                        name="itemPrice"
-                        [(ngModel)]="editItem.itemPrice"
-                        placeholder="item price"
-                      />
-                    </div>
+                    <label class="econexItem"><b>Item Image</b></label>
+                    <input
+                      class="itemTextBox"
+                      type="text"
+                      name="itemimage"
+                      [(ngModel)]="editItem.imgUrl"
+                      placeholder="item url"
+                    />
+                  </div>
+                  <br />
+                  <br />
+                  <div class="form-group">
+                    <label class="econexItem"><b>Item Name</b></label>
+                    <input
+                      class="itemTextBox"
+                      type="text"
+                      name="itemname"
+                      [(ngModel)]="editItem.itemName"
+                      placeholder="item name"
+                    />
+                  </div>
+                  <br />
+                  <div class="form-group">
+                    <label class="econexItem"><b>Item Price</b></label>
+                    <input
+                      class="itemTextBox"
+                      type="text"
+                      name="itemPrice"
+                      [(ngModel)]="editItem.itemPrice"
+                      placeholder="item price"
+                    />
                   </div>
                   <br />
                   <div class="form-group">
