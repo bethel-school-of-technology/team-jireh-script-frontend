@@ -6,7 +6,7 @@
       "author": "typicode"
     }
   ],
-  "comments": [
+  "signupUsers": [
     {
       "id": 1,
       "body": "some comment",
@@ -16,4 +16,5 @@
   "profile": {
     "name": "typicode"
   }
+ 
 }

@@ -80,14 +80,7 @@ import { Mensjeans6Component } from './allmensjeans/mensjeans6/mensjeans6.compon
     Mensjackets7Component,
     AllmensshirtsComponent,
     Mensshirts1Component,
-    Mensshirts5Component,
-    AllmensjeansComponent,
-    Mensjeans1Component,
-    Mensjeans2Component,
-    Mensjeans3Component,
-    Mensjeans4Component,
-    Mensjeans5Component,
-    Mensjeans6Component
+
    
   
 
@@ -100,10 +93,12 @@ import { Mensjeans6Component } from './allmensjeans/mensjeans6/mensjeans6.compon
     BrowserAnimationsModule,
     HttpClientModule,
     OwlModule
-  
+    
   
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GeoDbService } from 'wft-geodb-angular-client';
 
 @Component({
   selector: 'app-payment',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class PaymentComponent implements OnInit {
 
   constructor() { }
+
+  
 
   ngOnInit(): void {
   }
