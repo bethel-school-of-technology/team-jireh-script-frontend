@@ -25,6 +25,14 @@
       "itemDescription": "You will love my gold sneakers.",
       "itemSeller": "Sarah James",
       "id": 4
+    },
+    {
+      "imgUrl": "https://burst.shopifycdn.com/photos/white-t-shirt-detail.jpg?width=746&format=pjpg&exif=1&iptc=1",
+      "itemName": "White Shirt",
+      "itemPrice": "24.99",
+      "itemDescription": "White Shirt",
+      "itemSeller": "Sarah James",
+      "id": 5
     }
   ]
 }

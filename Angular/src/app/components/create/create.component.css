@@ -29,8 +29,9 @@ img, figure {
 .creatediv{
     display: flex;
     justify-content: center;
-    background-color: #E5E5E5;
-   
+    background: linear-gradient(#c9c6c6, #f1f2f6);/* #E5E5E5;*/
+    /*background-color: #D3D3D3;*/
+  
 }
 
 .econexItem {

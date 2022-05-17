@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class CustomerloginComponent implements OnInit {
 
-  public loginForm!: FormGroup
+  public loginForm !: FormGroup
   constructor(private formBuilder : FormBuilder, private http : HttpClient, private router: Router) { }
 
   ngOnInit(): void {
@@ -22,18 +22,19 @@ export class CustomerloginComponent implements OnInit {
   login(){
     this.http.post<any>("http://localhost:4000/users/login",this.loginForm.value)
     .subscribe(res=>{
-      const user = res.find((a:any)=> {
-        return a.Username === this.loginForm.value.Username && a.Password === this.loginForm.value.Password
-      });
-      if(user){
+      // const user = res.find((a:any)=> {
+      //   return a.Username === this.loginForm.value.Username && a.Password === this.loginForm.value.Password
+      // });
+
+      if(res.UserId){
         alert("Login Success");
-        this.loginForm.reset();
+        // this.loginForm.reset();
         this.router.navigate(['shop'])
       }else{
         alert("User not found");
       }
     },err=>{
-      alert("Something went wrong!")
+      alert("User not found");
     })
 
   }

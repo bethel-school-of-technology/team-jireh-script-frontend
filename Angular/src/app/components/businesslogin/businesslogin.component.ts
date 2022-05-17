@@ -22,20 +22,31 @@ export class BusinessloginComponent implements OnInit {
   businessLogin(){
     this.http.post<any>("http://localhost:4000/users/loginseller",this.businessLoginForm.value)
     .subscribe(res=>{
-      const businessUser = res.find((a:any)=>{
+      /*const businessUser = res.find((a:any)=>{
         return a.BusinessName === this.businessLoginForm.value.BusinessName && a.Password === this.businessLoginForm.value.Password 
-      });
-      if(businessUser){
+      });*/
+      if(res.UserId){
         alert("Login Success");
-        this.businessLoginForm.reset();
+        //this.businessLoginForm.reset();
         this.router.navigate(['inventory'])
       }else{
-        alert("user not found");
+        alert("User not found");
       }
     },err=>{
-      alert("Something went wrong!!")
+      alert("Something went wrong!")
     })
-
+/*
+if(res.UserId){
+        alert("Login Success");
+        // this.loginForm.reset();
+        this.router.navigate(['shop'])
+      }else{
+        alert("User not found");
+      }
+    },err=>{
+      alert("User not found");
+    })
+*/
   }
 
 }

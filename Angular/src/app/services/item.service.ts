@@ -10,7 +10,7 @@ export class ItemService {
 
 
 
-  myItemURL: string = "http://localhost:4000/categories"
+  myItemURL: string = "http://localhost:3000/items"
   
   constructor(private http:HttpClient)  {}
 
