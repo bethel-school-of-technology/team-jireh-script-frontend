@@ -26,25 +26,19 @@ export class CustomerregisterComponent implements OnInit {
   }
   signUp(){
     this.http.post<any>("http://localhost:4000/users/signup",this.signupForm.value).subscribe({
-
-      next: (v) => console.log(v),
-      error: (e) => console.error(e),
-      complete: () => console.info('complete'),
      
+      //next: (v) => alert("Signup Successful"),
+      next: (v) => console.log(v),
+     /* error: (e) => alert("Something went wrong"),
+      complete: () => this.router.navigate(['login'])*/
       
-    
-    // .subscribe(res=> {
-    //   alert("Signup Successful");
-    //   this.signupForm.reset();
-    //   this.router.navigate(['login']);
-    // },err=>{
-    //   alert("Something went wrong")
-    // })
-  } )
+    })
+  
   alert("Signup Successful");
-this.router.navigate(['login']);
+  this.router.navigate(['login']);
   err=>{
     alert("Something went wrong")
   }
 }
+
 }

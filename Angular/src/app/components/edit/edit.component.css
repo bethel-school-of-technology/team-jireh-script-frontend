@@ -29,7 +29,8 @@ img, figure {
 .editdiv{
     display: flex;
     justify-content: center;
-    background-color: #E5E5E5;
+    background: linear-gradient(#c9c6c6, #f1f2f6);
+    /*background-color: #E5E5E5;*/
    
 }
 

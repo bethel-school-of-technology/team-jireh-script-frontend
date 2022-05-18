@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs/internal/Observable';
 import { Item } from '../models/item';
 
@@ -12,7 +13,7 @@ export class ItemService {
 
   myItemURL: string = "http://localhost:3000/items"
   
-  constructor(private http:HttpClient)  {}
+  constructor(private http:HttpClient, private router: Router)  {}
 
     //List all items
     getAllItems(): Observable<Item[]> {
