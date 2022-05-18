@@ -66,6 +66,13 @@ import { Mensshirts4Component } from './allmensshirts/mensshirts4/mensshirts4.co
 import { Mensshirts5Component } from './allmensshirts/mensshirts5/mensshirts5.component';
 import { Mensshirts6Component } from './allmensshirts/mensshirts6/mensshirts6.component';
 import { Mensshirts7Component } from './allmensshirts/mensshirts7/mensshirts7.component';
+import { AllmensjeansComponent } from './allmensjeans/allmensjeans.component';
+import { Mensjeans1Component } from './allmensjeans/mensjeans1/mensjeans1.component';
+import { Mensjeans2Component } from './allmensjeans/mensjeans2/mensjeans2.component';
+import { Mensjeans3Component } from './allmensjeans/mensjeans3/mensjeans3.component';
+import { Mensjeans4Component } from './allmensjeans/mensjeans4/mensjeans4.component';
+import { Mensjeans5Component } from './allmensjeans/mensjeans5/mensjeans5.component';
+import { Mensjeans6Component } from './allmensjeans/mensjeans6/mensjeans6.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -133,7 +140,13 @@ const routes: Routes = [
 {path: 'mensshirts5', component: Mensshirts5Component},
 {path: 'mensshirts6', component: Mensshirts6Component},
 {path: 'mensshirts7', component: Mensshirts7Component},
-
+{path: 'allmensjeans', component: AllmensjeansComponent},
+{path: 'mensjeans1', component: Mensjeans1Component},
+{path: 'mensjeans2', component: Mensjeans2Component},
+{path: 'mensjeans3', component: Mensjeans3Component},
+{path: 'mensjeans4', component: Mensjeans4Component},
+{path: 'mensjeans5', component:Mensjeans5Component},
+{path: 'mensjeans6', component:Mensjeans6Component},
   { path: '', redirectTo: '', pathMatch:'full'}
 ]; 
 
