@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GeoDbService } from 'wft-geodb-angular-client';
+
+declare const L: any;
 
 @Component({
   selector: 'app-payment',
