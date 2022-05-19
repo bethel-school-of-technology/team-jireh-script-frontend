@@ -28,3 +28,9 @@ button {
 input {
     margin-top: 20px;
 }
+
+.loginText{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}

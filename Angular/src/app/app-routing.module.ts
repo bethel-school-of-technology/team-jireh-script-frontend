@@ -73,18 +73,47 @@ import { Mensjeans3Component } from './allmensjeans/mensjeans3/mensjeans3.compon
 import { Mensjeans4Component } from './allmensjeans/mensjeans4/mensjeans4.component';
 import { Mensjeans5Component } from './allmensjeans/mensjeans5/mensjeans5.component';
 import { Mensjeans6Component } from './allmensjeans/mensjeans6/mensjeans6.component';
+import { ListoneComponent } from './listone/listone.component';
+import { WomenshirtsallpageComponent } from './womenshirts/womenshirtsallpage/womenshirtsallpage.component';
+import { Womenshirts1Component } from './womenshirts/womenshirts1/womenshirts1.component';
+import { Womenshirts2Component } from './womenshirts/womenshirts2/womenshirts2.component';
+import { Womenshirts3Component } from './womenshirts/womenshirts3/womenshirts3.component';
+import { Womenshirts4Component } from './womenshirts/womenshirts4/womenshirts4.component';
+import { Womenshirt5Component } from './womenshirts/womenshirt5/womenshirt5.component';
+import { Womenshirt6Component } from './womenshirts/womenshirt6/womenshirt6.component';
+import { Womenshirt7Component } from './womenshirts/womenshirt7/womenshirt7.component';
+import { Womenshirt8Component } from './womenshirts/womenshirt8/womenshirt8.component';
+import { WomenjacketsallpageComponent } from './womenjackets/womenjacketsallpage/womenjacketsallpage.component';
+import { Womenjacket1Component } from './womenjackets/womenjacket1/womenjacket1.component';
+import { Womenjacket2Component } from './womenjackets/womenjacket2/womenjacket2.component';
+import { Womenjacket3Component } from './womenjackets/womenjacket3/womenjacket3.component';
+import { Womenjacket4Component } from './womenjackets/womenjacket4/womenjacket4.component';
+import { Womenjacket5Component } from './womenjackets/womenjacket5/womenjacket5.component';
+import { Womenjacket7Component } from './womenjackets/womenjacket7/womenjacket7.component';
+import { Womenjacket6Component } from './womenjackets/womenjacket6/womenjacket6.component';
+import { Womenjacket8Component } from './womenjackets/womenjacket8/womenjacket8.component';
+import { WomenjeansallpageComponent } from './womenjeans/womenjeansallpage/womenjeansallpage.component';
+import { Womenjean1Component } from './womenjeans/womenjean1/womenjean1.component';
+import { Womenjean2Component } from './womenjeans/womenjean2/womenjean2.component';
+import { Womenjean3Component } from './womenjeans/womenjean3/womenjean3.component';
+import { Womenjean4Component } from './womenjeans/womenjean4/womenjean4.component';
+import { Womenjean5Component } from './womenjeans/womenjean5/womenjean5.component';
+import { Womenjean6Component } from './womenjeans/womenjean6/womenjean6.component';
+import { Womenjean7Component } from './womenjeans/womenjean7/womenjean7.component';
+import { Womenjean8Component } from './womenjeans/womenjean8/womenjean8.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'login', component: CustomerloginComponent},
   { path: 'register', component: CustomerregisterComponent},
-  { path: 'registerbusiness', component: BusinessregisterComponent},
+  { path: 'businessregister', component: BusinessregisterComponent},
   { path: 'businesslogin', component: BusinessloginComponent},
   { path: 'shop', component: ShopComponent},
   { path: 'cart', component: CartComponent},
   { path: 'createitem', component: CreateComponent},
-  { path: 'edititem', component: EditComponent},
-  { path: 'inventory', component: InventoryComponent},
+  { path: 'edititem/:itemId', component: EditComponent},
+  {path: 'inventory', component: InventoryComponent},
+  { path: 'inventory/:itemId', component: ListoneComponent},
   { path: 'viewoneitem', component:ViewoneitemComponent},
   { path: 'payment', component: PaymentComponent},
   {path: 'allwomenshoes', component: WomenshoesallpageComponent},
@@ -147,6 +176,33 @@ const routes: Routes = [
 {path: 'mensjeans4', component: Mensjeans4Component},
 {path: 'mensjeans5', component:Mensjeans5Component},
 {path: 'mensjeans6', component:Mensjeans6Component},
+  {path:'allwomenshirts', component:WomenshirtsallpageComponent},
+  {path:'womenshirt1', component:Womenshirts1Component},
+  {path:'womenshirt2', component:Womenshirts2Component},
+  {path:'womenshirt3', component:Womenshirts3Component},
+  {path:'womenshirt4', component: Womenshirts4Component},
+  {path:'womenshirt5', component: Womenshirt5Component},
+  {path:'womenshirt6', component: Womenshirt6Component},
+  {path:'womenshirt7', component: Womenshirt7Component},
+  {path:'womenshirt8', component:Womenshirt8Component},
+  {path:'allwomenjackets', component:WomenjacketsallpageComponent},
+  {path:'womenjacket1', component:Womenjacket1Component},
+  {path:'womenjacket2', component:Womenjacket2Component},
+  {path:'womenjacket3', component:Womenjacket3Component},
+  {path:'womenjacket4', component:Womenjacket4Component},
+  {path:'womenjacket5', component:Womenjacket5Component},
+  {path:'womenjacket6', component:Womenjacket6Component},
+  {path:'womenjacket7', component:Womenjacket7Component},
+  {path:'womenjacket8', component:Womenjacket8Component},
+  {path:'allwomenjeans', component: WomenjeansallpageComponent},
+  {path:'womenjean1', component: Womenjean1Component},
+  {path:'womenjean2', component:Womenjean2Component},
+  {path: 'womenjean3', component:Womenjean3Component},
+  {path:'womenjean4',component:Womenjean4Component},
+  {path:'womenjean5', component:Womenjean5Component},
+  {path:'womenjean6', component:Womenjean6Component},
+  {path:'womenjean7', component:Womenjean7Component},
+  {path:'womenjean8', component:Womenjean8Component},
   { path: '', redirectTo: '', pathMatch:'full'}
 ]; 
 

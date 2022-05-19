@@ -11,124 +11,107 @@
               </h2>
 
               <form
+                [formGroup]="businessSignUpForm"
                 (ngSubmit)="businessSignUp()"
               >
-                <div class="mb-3">
+                <div class="form-group">
                   <input
-                    formControlName="Username"
+                    formControlName="BusinessName"
                     type="text"
                     class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="username"
-                    placeholder="username"
+                    id="exampleInputBusinessName1"
+                    aria-describedby="buisnessname"
+                    placeholder="business name"
                   />
                   <span
                     class="text-danger"
                     *ngIf="
-                      businessSignUpForm.controls['Username'].dirty &&
-                      businessSignUpForm.hasError('required', 'Username')
+                      businessSignUpForm.controls['BusinessName'].dirty &&
+                      businessSignUpForm.hasError('required', 'BusinessName')
                     "
-                    >*Username is required</span
+                    >*Business Name is required</span
                   >
+
                   <div class="form-group">
                     <input
-                      formControlName="BusinessName"
+                      formControlName="FirstName"
                       type="text"
                       class="form-control"
-                      id="exampleInputBusinessName1"
-                      aria-describedby="buisnessname"
-                      placeholder="business name"
+                      id="exampleInputEmail1"
+                      aria-describedby="firstname"
+                      placeholder="first name"
                     />
                     <span
                       class="text-danger"
                       *ngIf="
-                        businessSignUpForm.controls['BusinessName'].dirty &&
-                        businessSignUpForm.hasError('required', 'BusinessName')
+                        businessSignUpForm.controls['FirstName'].dirty &&
+                        businessSignUpForm.hasError('required', 'FirstName')
                       "
-                      >*Business Name is required</span
+                      >*First Name is required</span
                     >
-
                     <div class="form-group">
                       <input
-                        formControlName="FirstName"
+                        formControlName="LastName"
                         type="text"
                         class="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="firstname"
-                        placeholder="first name"
+                        id="exampleInputLastName1"
+                        aria-describedby="lastname"
+                        placeholder="last name"
                       />
                       <span
                         class="text-danger"
                         *ngIf="
-                          businessSignUpForm.controls['FirstName'].dirty &&
-                          businessSignUpForm.hasError('required', 'FirstName')
+                          businessSignUpForm.controls['LastName'].dirty &&
+                          businessSignUpForm.hasError('required', 'LastName')
                         "
-                        >*First Name is required</span
+                        >*Last Name is required</span
                       >
                       <div class="form-group">
                         <input
-                          formControlName="LastName"
+                          formControlName="Email"
                           type="text"
                           class="form-control"
-                          id="exampleInputLastName1"
-                          aria-describedby="lastname"
-                          placeholder="last name"
+                          id="exampleInputEmail1"
+                          aria-describedby="email"
+                          placeholder="business email"
                         />
                         <span
                           class="text-danger"
                           *ngIf="
-                            businessSignUpForm.controls['LastName'].dirty &&
-                            businessSignUpForm.hasError('required', 'LastName')
+                            businessSignUpForm.controls['Email'].dirty &&
+                            businessSignUpForm.hasError('required', 'Email')
                           "
-                          >*Last Name is required</span
+                          >*Business Email is required</span
                         >
                         <div class="form-group">
                           <input
-                            formControlName="Email"
-                            type="text"
+                            formControlName="Password"
+                            type="password"
                             class="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="email"
-                            placeholder="business email"
+                            id="exampleInputPassword1"
+                            aria-describedby="password"
+                            placeholder="password"
                           />
                           <span
                             class="text-danger"
                             *ngIf="
-                              businessSignUpForm.controls['Email'].dirty &&
-                              businessSignUpForm.hasError('required', 'Email')
+                              businessSignUpForm.controls['Password'].dirty &&
+                              businessSignUpForm.hasError(
+                                'required',
+                                'Password'
+                              )
                             "
-                            >*Business Email is required</span
+                            >*Password is required</span
                           >
-                          <div class="form-group">
-                            <input
-                              formControlName="Password"
-                              type="password"
-                              class="form-control"
-                              id="exampleInputPassword1"
-                              aria-describedby="password"
-                              placeholder="password"
-                            />
-                            <span
-                              class="text-danger"
-                              *ngIf="
-                                businessSignUpForm.controls['Password'].dirty &&
-                                businessSignUpForm.hasError(
-                                  'required',
-                                  'Password'
-                                )
-                              "
-                              >*Password is required</span
-                            >
-                          </div>
-                          <div class="d-flex justify-content-center">
-                            <button
-                              type="submit"
-                              [disabled]="!businessSignUpForm.valid"
-                              class="btn btn-dark mb-2"
-                            >
-                              Register
-                            </button>
-                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <button
+                            type="submit"
+                            [disabled]="!businessSignUpForm.valid"
+                            class="btn btn-dark mb-2"
+                          >
+                            Register
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -136,9 +119,10 @@
                 </div>
               </form>
               <a
-                style="color: white;"
+                class="signIntext"
+                style="color: white; passing-top: 30px"
                 routerLink="/businesslogin"
-                >You already have an account? Sign-in</a
+                >You already have a business account? Sign-in</a
               >
             </div>
           </div>

@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import {OwlModule} from 'ngx-owl-carousel';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -43,6 +43,8 @@ import { Mensjeans3Component } from './allmensjeans/mensjeans3/mensjeans3.compon
 import { Mensjeans4Component } from './allmensjeans/mensjeans4/mensjeans4.component';
 import { Mensjeans5Component } from './allmensjeans/mensjeans5/mensjeans5.component';
 import { Mensjeans6Component } from './allmensjeans/mensjeans6/mensjeans6.component';
+import { ListoneComponent } from './listone/listone.component';
+import {ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -81,6 +83,7 @@ import { Mensjeans6Component } from './allmensjeans/mensjeans6/mensjeans6.compon
     AllmensshirtsComponent,
     Mensshirts1Component,
 
+    ListoneComponent
    
   
 
@@ -92,8 +95,10 @@ import { Mensjeans6Component } from './allmensjeans/mensjeans6/mensjeans6.compon
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    OwlModule
-    
+    OwlModule,
+    FormsModule,
+    ReactiveFormsModule
+  
   
   ],
   providers: [],

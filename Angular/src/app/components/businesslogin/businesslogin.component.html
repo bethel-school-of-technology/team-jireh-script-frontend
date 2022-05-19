@@ -11,27 +11,9 @@
               </h2>
 
               <form
-              
+                [formGroup]="businessLoginForm"
                 (ngSubmit)="businessLogin()"
               >
-                <div class="form-group">
-                  <input
-                    formControlName="Username"
-                    type="text"
-                    class="form-control"
-                    id="exampleInputUsername1"
-                    aria-describedby="username"
-                    placeholder="username"
-                  />
-                </div>
-                <span
-                  class="text-danger"
-                  *ngIf="
-                    businessLoginForm.controls['Username'].dirty &&
-                    businessLoginForm.hasError('required', 'Username')
-                  "
-                  >*Username is required</span
-                >
                 <div class="form-group">
                   <input
                     formControlName="BusinessName"
@@ -79,7 +61,8 @@
                 </div>
               </form>
               <a
-                style="color: white;"
+                class="loginText"
+                style="color: white; passing-top: 30px"
                 routerLink="/businessregister"
                 >You don't have a business account? Sign-up</a
               >
