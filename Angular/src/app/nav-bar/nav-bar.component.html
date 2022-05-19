@@ -17,12 +17,16 @@
       <!--<div class="cart-no">5</div>-->
     </a>
     <a
-      *ngIf="!loggedIn()"
       class="btn btn-outline-secondary mr-2"
       [routerLink]="['login']"
       routerLinkActive="active"
       >Login</a
     >
+    <!--<a *ngIf="!loggedIn()">
+      class="btn btn-outline-secondary mr-2" [routerLink]="['login']"
+      routerLinkActive="active" >Login</a
+    >-->
+    <!--
     <a
       style="cursor: pointer"
       *ngIf="loggedIn()"
@@ -30,7 +34,15 @@
       class="btn btn-outline-secondary mr-2"
       routerLinkActive="active"
       >Logout</a
+    >-->
+
+    <a
+      class="btn btn-outline-secondary mr-3"
+      [routerLink]="['register']"
+      routerLinkActive="active"
+      >Register</a
     >
+    <!--
     <a
       *ngIf="!loggedIn()"
       class="btn btn-outline-secondary mr-3"
@@ -38,5 +50,6 @@
       routerLinkActive="active"
       >Register</a
     >
+-->
   </div>
 </div>

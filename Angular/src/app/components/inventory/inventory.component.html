@@ -14,7 +14,7 @@
       *ngFor="let item of listofItems"
       class="col-lg-3 col-sm-4 col-6 category-card border border-collapse"
     >
-      <a routerLink="/inventory/{{ item.id }}">
+      <a routerLink="/inventory/{{ item.itemId }}">
         <div class="card border-0">
           <a class="d-block" href=" "
             ><img class="d-block" src="{{ item.imgUrl }}" alt="Econex item"
@@ -27,7 +27,7 @@
               }}</span></span
             >
           </div>
-          <button class="deleteButton" (click)="deleteItem(item.id)">
+          <button class="deleteButton" (click)="deleteItem(item.itemId)">
             Delete Item
           </button>
         </div>

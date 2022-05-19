@@ -33,6 +33,14 @@
       "itemDescription": "White Shirt",
       "itemSeller": "Sarah James",
       "id": 5
+    },
+    {
+      "imgUrl": "https://burst.shopifycdn.com/photos/striped-fashion-shirt.jpg?width=746&format=pjpg&exif=1&iptc=1",
+      "itemName": "Striped Shirt",
+      "itemPrice": "14.99",
+      "itemDescription": "You will love this comfortable and stylish striped shirt!",
+      "itemSeller": "Kelly Williams",
+      "id": 6
     }
   ]
 }

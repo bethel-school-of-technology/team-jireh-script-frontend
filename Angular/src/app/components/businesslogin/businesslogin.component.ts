@@ -25,9 +25,12 @@ export class BusinessloginComponent implements OnInit {
       /*const businessUser = res.find((a:any)=>{
         return a.BusinessName === this.businessLoginForm.value.BusinessName && a.Password === this.businessLoginForm.value.Password 
       });*/
-      if(res.UserId){
+      console.log(res);
+      if(res.user.UserId){
         alert("Login Success");
         //this.businessLoginForm.reset();
+        localStorage.setItem('token', res.token);
+        localStorage.setItem('user', JSON.stringify(res.user));
         this.router.navigate(['inventory'])
       }else{
         alert("User not found");
