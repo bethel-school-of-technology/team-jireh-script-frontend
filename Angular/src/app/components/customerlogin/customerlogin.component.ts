@@ -26,7 +26,7 @@ export class CustomerloginComponent implements OnInit {
       //   return a.Username === this.loginForm.value.Username && a.Password === this.loginForm.value.Password
       // });
 
-      if(res.UserId){
+      if(res.user.UserId){
         alert("Login Success");
         // this.loginForm.reset();
         localStorage.setItem('token', res.token);

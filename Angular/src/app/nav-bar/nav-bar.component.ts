@@ -20,13 +20,13 @@ export class NavBarComponent implements OnInit {
   }
 
   logoutUser() {
-    this.http.get<any>("http://localhost:4000/users/logout").subscribe(res=>{
+    //this.http.get<any>("http://localhost:4000/users/logout").subscribe(res=>{
    localStorage.removeItem('token')
    localStorage.removeItem('user');
    //localStorage.setItem('user', JSON.stringify(res.user));
    this.router.navigate(['/shop'])
-  })
   }
+  
  /*
 
  signUp(){

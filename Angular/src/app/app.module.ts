@@ -45,6 +45,7 @@ import { Mensjeans5Component } from './allmensjeans/mensjeans5/mensjeans5.compon
 import { Mensjeans6Component } from './allmensjeans/mensjeans6/mensjeans6.component';
 import { ListoneComponent } from './listone/listone.component';
 import {ReactiveFormsModule } from '@angular/forms';
+import { PaymentcompletepageComponent } from './components/paymentcompletepage/paymentcompletepage.component';
 
 
 
@@ -83,7 +84,8 @@ import {ReactiveFormsModule } from '@angular/forms';
     AllmensshirtsComponent,
     Mensshirts1Component,
 
-    ListoneComponent
+    ListoneComponent,
+     PaymentcompletepageComponent
    
   
 
