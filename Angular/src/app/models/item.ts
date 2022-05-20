@@ -5,7 +5,7 @@ export class Item {
     itemId: number;
     itemName: string;
     itemSeller: string;
-    imgUrl: string;
+    imgURL: string;
     itemPrice: number;
     itemDescription: string;
 }
