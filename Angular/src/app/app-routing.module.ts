@@ -101,6 +101,7 @@ import { Womenjean5Component } from './womenjeans/womenjean5/womenjean5.componen
 import { Womenjean6Component } from './womenjeans/womenjean6/womenjean6.component';
 import { Womenjean7Component } from './womenjeans/womenjean7/womenjean7.component';
 import { Womenjean8Component } from './womenjeans/womenjean8/womenjean8.component';
+import { PaymentcompletepageComponent } from './components/paymentcompletepage/paymentcompletepage.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -203,6 +204,7 @@ const routes: Routes = [
   {path:'womenjean6', component:Womenjean6Component},
   {path:'womenjean7', component:Womenjean7Component},
   {path:'womenjean8', component:Womenjean8Component},
+  {path:'paymentcomplete', component: PaymentcompletepageComponent},
   { path: '', redirectTo: '', pathMatch:'full'}
 ]; 
 
