@@ -16,7 +16,7 @@
   <div class="col-sm-8 col-md-9">
     <div class="container pb-5 mb-sm-2">
       <div class="topicsection">
-        <h1 class="title">Inventory</h1>
+        <h1 class="title">Latest Items</h1>
       </div>
 
       <hr />
@@ -26,7 +26,7 @@
           *ngFor="let item of listofItems"
           class="col-lg-3 col-sm-4 col-6 category-card border border-collapse"
         >
-          <a routerLink="/inventory/{{ item.itemId }}">
+          <a routerLink="/viewoneitem/{{ item.itemId }}">
             <div class="card border-0">
               <a class="d-block" href=" "
                 ><img class="d-block" src="{{ item.imgURL }}" alt="Econex item"
