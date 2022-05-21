@@ -19,6 +19,13 @@ export class ItemService {
     getAllItems(): Observable<Item[]> {
       return this.http.get<Item[]>(this.myItemURL)
     }
+
+    getInventoryItems(): Observable<Item[]> {
+      const token = localStorage.getItem('token');
+      let headers = new HttpHeaders();
+      headers = headers.set('Authorization', `Bearer ${token}`);
+      return this.http.get<Item[]>(`${this.myItemURL}/inventory`, {headers})
+    }
     //a way to get a single item
     getOneItem(reqID: number): Observable<Item>{
       return this.http.get<Item>(`${this.myItemURL}/${reqID}`)

@@ -115,7 +115,7 @@ const routes: Routes = [
   { path: 'edititem/:itemId', component: EditComponent},
   {path: 'inventory', component: InventoryComponent},
   { path: 'inventory/:itemId', component: ListoneComponent},
-  { path: 'viewoneitem', component:ViewoneitemComponent},
+  { path: 'viewoneitem/:itemId', component:ViewoneitemComponent},
   { path: 'payment', component: PaymentComponent},
   {path: 'allwomenshoes', component: WomenshoesallpageComponent},
   {path: 'womenshoes1', component: Womenshoes1Component},

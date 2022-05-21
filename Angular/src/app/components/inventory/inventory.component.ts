@@ -13,7 +13,7 @@ export class InventoryComponent implements OnInit {
   constructor(private myItemService: ItemService) { }
 
   ngOnInit(): void {
-    this.myItemService.getAllItems().subscribe(response =>{ console.log(response);
+    this.myItemService.getInventoryItems().subscribe(response =>{ console.log(response);
     this.listofItems = response;})
   }
   deleteItem(itemId:number){
