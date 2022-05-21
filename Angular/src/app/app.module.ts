@@ -46,6 +46,9 @@ import { Mensjeans6Component } from './allmensjeans/mensjeans6/mensjeans6.compon
 import { ListoneComponent } from './listone/listone.component';
 import {ReactiveFormsModule } from '@angular/forms';
 import { PaymentcompletepageComponent } from './components/paymentcompletepage/paymentcompletepage.component';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
 
 
 
@@ -83,6 +86,7 @@ import { PaymentcompletepageComponent } from './components/paymentcompletepage/p
     Mensjackets7Component,
     AllmensshirtsComponent,
     Mensshirts1Component,
+    Mensjeans1Component,
 
     ListoneComponent,
      PaymentcompletepageComponent
@@ -99,10 +103,13 @@ import { PaymentcompletepageComponent } from './components/paymentcompletepage/p
     HttpClientModule,
     OwlModule,
     FormsModule,
-    ReactiveFormsModule
-  
-  
+    ReactiveFormsModule,
+    RouterModule,
+    CommonModule
   ],
+  
+  
+  
   providers: [],
   bootstrap: [AppComponent]
 })

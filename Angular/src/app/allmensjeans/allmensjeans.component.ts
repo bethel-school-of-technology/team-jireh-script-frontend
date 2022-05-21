@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./allmensjeans.component.css']
 })
 export class AllmensjeansComponent implements OnInit {
-
+  
   constructor() { }
-
+ 
   ngOnInit(): void {
   }
 
