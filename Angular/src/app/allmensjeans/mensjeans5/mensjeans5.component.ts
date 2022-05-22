@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mensjeans5.component.css']
 })
 export class Mensjeans5Component implements OnInit {
-
-  constructor() { }
-
+  showImage: boolean;
+  constructor() { this.showImage= false;}
+  showPic(show:boolean){
+    this.showImage= show
+  }
   ngOnInit(): void {
   }
 
