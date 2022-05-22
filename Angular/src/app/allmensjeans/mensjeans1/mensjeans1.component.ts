@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mensjeans1.component.css']
 })
 export class Mensjeans1Component implements OnInit {
-
-  constructor() { }
-
+  title = "mouse-hover";
+  showImage:boolean;
+  constructor() { this.showImage= false;
+    
+  }
+showPic(show:boolean){
+      this.showImage= show
+    }
   ngOnInit(): void {
   }
+ 
+  }
 
-}
+
+
+

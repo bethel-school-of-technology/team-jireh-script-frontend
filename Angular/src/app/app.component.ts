@@ -9,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'Econex';
   products: any[];
-  
+ 
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+  
+    
+  }
   
   ngOnInit(): void {
     
