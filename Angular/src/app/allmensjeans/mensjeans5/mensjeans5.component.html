@@ -2,7 +2,7 @@
     <div class="row">
       <div class="col-md-5">
         <div>
-          <img
+          <img *ngIf="showImage"
             class="img-thumbnail w-100 d-block"
             src="https://burst.shopifycdn.com/photos/mens-casual-fashion-denim-and-sneakers.jpg?width=4460&height=4460&exif=1&iptc=1"
             alt="Slide Image"
@@ -33,7 +33,7 @@
           <a class="btn btn-success" href="/cart">BUY NOW</a>
         </div>
         <br />
-        <a class="backtoshoplink" href="/allmensjeans">continue shopping</a>
+        <a (mouseover)="showPic(true)" (mouseout)="showPic(false)" class="backtoshoplink" href="/allmensjeans">continue shopping</a>
       </div>
     </div>
   </div>

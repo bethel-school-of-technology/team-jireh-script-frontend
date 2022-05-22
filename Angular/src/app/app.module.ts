@@ -87,6 +87,11 @@ import { CommonModule } from '@angular/common';
     AllmensshirtsComponent,
     Mensshirts1Component,
     Mensjeans1Component,
+    Mensjeans2Component,
+    Mensjeans3Component,
+    Mensjeans4Component,
+    Mensjeans5Component,
+    Mensjeans6Component,
 
     ListoneComponent,
      PaymentcompletepageComponent
